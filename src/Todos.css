@@ -1,0 +1,46 @@
+.Todos {
+  width: 50%;
+  border: 8px dotted #98ff98;
+  padding: 16px;
+}
+
+.Todos-head {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.Todos-header {
+  margin: -16px 0 0;
+  padding: 0;
+  color: #98ff98;
+  text-transform: uppercase;
+  font-size: 48px;
+  font-weight: 200;
+}
+
+.Todos-input {
+  padding: 16px;
+  border: none;
+  background: beige;
+  box-shadow: 0 0 10px rgb(152, 255, 152);
+}
+
+.Todos-body {
+  margin-top: 16px;
+  background-color: beige;
+}
+
+.Todos-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.Todos-list-item {
+  margin-top: 8px;
+  font-size: 24px;
+  border-bottom: 1px solid #282c34;
+  box-shadow: 0 0 10px rgb(152, 255, 152);
+}
