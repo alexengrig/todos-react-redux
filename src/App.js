@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import reactLogo from './react-logo.svg';
 import reduxLogo from './redux-logo.svg';
 import './App.css';
+import Todos from './Todos';
 import { withStore } from './store';
 
 const LogoLearn = ({ logo, altLogo, linkClass, href, text }) => (<div className="App-logo-learn">
@@ -35,7 +36,7 @@ class App extends Component {
             />
           </div>
         </header>
-        Test
+        <Todos />
       </div>
     );
   }
