@@ -1,9 +1,19 @@
 import React, { memo } from 'react';
-import { TodoHeader, TodoInput } from '../index';
+import * as PropTypes from 'prop-types';
+import { TodoHeadControl, TodoHeadTitle } from '..';
 
-const TodoHead = ({ onAddTodo }) => (<article className="Todos-head">
-  <TodoHeader />
-  <TodoInput onAddTodo={onAddTodo} />
-</article>);
+const TodoHead = ({ classes = {}, onAddTodo = f => f }) => (
+  <section className={classes.head}>
+    <TodoHeadTitle classes={classes} />
+    <TodoHeadControl classes={classes}
+                     onAddTodo={onAddTodo}
+    />
+  </section>
+);
+
+TodoHead.propTypes = {
+  classes: PropTypes.object.isRequired,
+  onAddTodo: PropTypes.func.isRequired
+};
 
 export default memo(TodoHead);
